@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: MyYuGothicM, YuGothic, sans-serif;
+}
+
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+
+  /* 25% {
+    opacity: 1;
+  } */
+
+  50% {
+    opacity: 1;
+  }
+
+  /* 75% {
+    opacity: 1;
+  } */
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.main {
+  position: relative;
+  /* background: tomato; */
+  width: 100%;
+  height: 100vh;
+}
+.main_btn_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__btn {
+  position: absolute;
+  bottom: 1rem;
+  z-index: 10;
+}
+
+.btn {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 100%;
+  margin-right: 1rem;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+#btn_01 {
+  background: #ffc9f9;
+}
+
+.main .bgimg {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center bottom;
+}
+
+#bg_01 {
+  background-image: url(./img/01.jpg);
+  /* z-index: 5; */
+  animation: fadeInAnime 5s ease 0.5s infinite normal backwards;
+}
+#bg_02 {
+  background-image: url(./img/02.jpg);
+  /* z-index: 4; */
+  animation: fadeInAnime 5s ease 0.5s infinite normal backwards;
+}
+#bg_03 {
+  background-image: url(./img/03.jpg);
+  /* z-index: 3; */
+  animation: fadeInAnime 5s ease 0.5s infinite normal backwards;
+}
+#bg_04 {
+  background-image: url(./img/04.jpg);
+  /* z-index: 2; */
+  animation: fadeInAnime 5s ease 0.5s infinite normal backwards;
+}
+#bg_05 {
+  background-image: url(./img/05.jpg);
+  /* z-index: 1; */
+  animation: fadeInAnime 5s ease 0.5s infinite normal backwards;
+}
+
+.main__content__section01 {
+  width: 100%;
+  height: 100vh;
+  background: #ffc9f9;
+}
